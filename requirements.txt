@@ -1,0 +1,26 @@
+#Basic
+numpy
+pandas
+
+# FACE-RECOGNATION
+scikit-learn
+dlib-bin
+
+# Fetching Pre-train model from Github
+# git+https://github.com/ageitgey/face_recognition_models
+# setuptools<70.0.0
+
+# DataBase
+supabase
+
+# Hashsing Id's & Password's
+bcrypt
+
+#Qr Code Genrate's
+segno
+
+# Image Preprocessing
+pillow
+
+#Basic FrontEnd Lib
+streamlit
