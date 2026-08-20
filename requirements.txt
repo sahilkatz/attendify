@@ -7,8 +7,8 @@ scikit-learn
 dlib-bin
 
 # Fetching Pre-train model from Github
-# git+https://github.com/ageitgey/face_recognition_models
-# setuptools<70.0.0
+git+https://github.com/ageitgey/face_recognition_models
+setuptools<70.0.0
 
 # DataBase
 supabase
@@ -24,3 +24,6 @@ pillow
 
 #Basic FrontEnd Lib
 streamlit
+
+librosa
+resemble
