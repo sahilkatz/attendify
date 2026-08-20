@@ -55,20 +55,20 @@ def style_base_layout():
                 
          /* Hide Top Bar of streamlit */
                 
-            #MainMenu, footer, header {
-                visibility: hidden;
-            }
+            # #MainMenu, footer, header {
+            #     visibility: hidden;
+            # }
                 
-            .block-container {
-                padding-top:1.5rem !important;    
-            }
+            # .block-container {
+            #     padding-top:1.5rem !important;    
+            # }
 
             h1 {
                 font-family: "Fugaz One", sans-serif !important;
-                font-size: 6.5rem !important;
+                font-size: 4rem !important;
                 line-height:1.1 !important;
                 margin-bottom:0rem !important;
-                color: white !important;
+                
                 
             }
                 
@@ -79,11 +79,19 @@ def style_base_layout():
                 line-height:0.9 !important;
                 margin-bottom:0rem !important;
                 
-            }
                 
-            h3, h4, p {
-                font-family: 'Outfit', sans-serif;    
             }
+
+            
+
+            
+                
+            h3, h4, p{
+                font-family: 'Outfit', sans-serif !important;
+                   
+            }
+
+           
                 
 
             button{
