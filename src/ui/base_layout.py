@@ -34,7 +34,7 @@ def style_background_dashboard():
         <style>
 
                 .stApp {
-                    background: #E0E3FF !important;
+                    background:#E4C2EB !important;
                 }
 
         </style>  
@@ -80,7 +80,10 @@ def style_base_layout():
                 margin-bottom:0rem !important;
                 
                 
+                
             }
+
+                               
 
             
 
