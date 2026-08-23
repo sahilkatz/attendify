@@ -1,4 +1,70 @@
 import streamlit as st
+import base64
+
+
+
+
+def set_background(image_file):
+
+    with open(image_file, "rb") as f:
+        img = base64.b64encode(f.read()).decode()
+
+    st.markdown(
+        f"""
+        <style>
+        .stApp {{
+            background-image: url("data:image/jpeg;base64,{img}") ;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }}
+        </style>
+        """,
+        unsafe_allow_html=True
+    )
+
+
+
+
+def get_image_base64(image_path):
+    with open(image_path, "rb") as f:
+        return base64.b64encode(f.read()).decode()
+
+
+def logo_home(image_path,x=""):
+
+    logo =get_image_base64(image_path)
+    
+    st.markdown(f"""
+        <div style="display:flex; flex-direction:column; align-items:center; justify-content:center; margin-bottom:0px; margin-top:0px; ">
+            <h2 style='text-align:center; font-size:4rem ;color:#14447B'>{x}</h2>
+            <img src="data:image/png;base64,{logo}" style='height:250px; border-radius:60px; margin-bottom :20px; ' />
+            
+        </div>   
+                
+                """, unsafe_allow_html=True)
+
+
+
+def note_Student_joined():
+    st.markdown("""
+            <style>
+            #root > div > div > div > div > section > div.stMainBlockContainer.block-container.st-emotion-cache-1w723zb.e15ve43o4 > div > div:nth-child(9) > div > div > div > div{
+                background-color:#14447B !important;
+            }
+            </style>
+            """, unsafe_allow_html=True)
+
+
+def note2_Student_joined():
+    st.markdown("""
+            <style>
+            #root > div > div > div > div > section > div.stMainBlockContainer.block-container.st-emotion-cache-1w723zb.e15ve43o4 > div > div:nth-child(9) > div > div:nth-child(1) > div > div.stElementContainer.element-container.st-emotion-cache-3pwa5w.e4tidtd1 > div > div > div > div{
+                background-color:#14447B !important
+            }
+            </style>
+            """, unsafe_allow_html=True)
 
 
 
@@ -7,19 +73,24 @@ def style_background_home():
     st.markdown("""
         <style>
 
-                .stApp {
-                    background: #5865F2 !important;
-                }
+                # .stApp {
+                #     background: #353B55 !important;
+                # }
 
                 .stApp div[data-testid="stColumn"]{
-                    background-color:#E0E3FF !important;
+                    background-color:white !important;
                     padding:2.5rem !important;
-                    border-radius: 5rem !important;
+                    border-radius: 6rem !important;
                     display:flex !important;
+                    flex-direction:column !important; 
+                    align-items:center !important; 
+                    justify-content:center !important;
+                    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1) !important;
+                    
+                    
+                   
                     
                     }
-
-                
 
                         
         </style>  
@@ -28,20 +99,24 @@ def style_background_home():
             ,unsafe_allow_html=True)
     
 
+    
+
 def style_background_dashboard():
 
     st.markdown("""
         <style>
 
-                .stApp {
-                    background:#E4C2EB !important;
-                }
+                # .stApp {
+                #     background: #67A6CE !important;
+                # }
 
         </style>  
 
                 """
             ,unsafe_allow_html=True)
     
+
+
 
     
 
@@ -55,13 +130,13 @@ def style_base_layout():
                 
          /* Hide Top Bar of streamlit */
                 
-            # #MainMenu, footer, header {
-            #     visibility: hidden;
-            # }
+            #MainMenu, footer, header {
+                visibility: hidden;
+            }
                 
-            # .block-container {
-            #     padding-top:1.5rem !important;    
-            # }
+            .block-container {
+                padding-top:1.5rem !important;    
+            }
 
             h1 {
                 font-family: "Fugaz One", sans-serif !important;
@@ -91,24 +166,27 @@ def style_base_layout():
                 
             h3, h4, p{
                 font-family: 'Outfit', sans-serif !important;
+                color:white !important;
                    
             }
 
            
-                
+               
 
             button{
                 border-radius: 1.5rem !important;
-                background-color: #5865F2 !important;
+                background-color: #14447B  !important;
+                background-color:  !important;
                 color: white !important;
                 padding: 10px 20px !important;
                 border: none !important;
                 transition: transform 0.25s ease-in-out !important;
+                
                 }
 
             button[kind="secondary"]{
                 border-radius: 1.5rem !important;
-                background-color: #EB459E !important;
+                background-color: #43C0E2  !important;
                 color: white !important;
                 padding: 10px 20px !important;
                 border: none !important;

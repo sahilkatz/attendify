@@ -1,5 +1,5 @@
 import streamlit as st
-from src.ui.base_layout import style_background_dashboard, style_base_layout
+from src.ui.base_layout import style_background_dashboard, style_base_layout, set_background,note2_Student_joined
 from src.components.header import header_dashboard
 from src.components.footer import footer_dashboard
 from PIL import Image
@@ -13,6 +13,8 @@ from src.components.subject_card import subject_card
 
 
 def student_dashboard():
+    note2_Student_joined()
+    
     student_data = st.session_state.student_data
     student_id = student_data['student_id']
     c1, c2 = st.columns(2, vertical_alignment='center', gap='xxlarge')
@@ -37,7 +39,7 @@ def student_dashboard():
 
 
     st.divider()
-
+    
 
     with st.spinner('Loading your enrolled subjects..'):
         subjects = get_student_subjects(student_id)
@@ -65,7 +67,7 @@ def student_dashboard():
 
         stats = stats_map.get(sid,{"total":0, "attended": 0} )
         def unenroll_button():
-                if st.button("Unenroll from this course", type='tertiary', width='stretch', icon=':material/delete_forever:'):
+                if st.button("Unenroll from this course", type='primary', width='stretch', icon=':material/delete_forever:'):
                     unenroll_student_to_subject(student_id, sid)
                     st.toast(f'Unenrolled from {sub['name']} successfully!')
                     st.rerun()
@@ -87,6 +89,7 @@ def student_dashboard():
 
 
 def student_screen():
+    set_background("./images/bg2.jpeg")
 
 
     style_background_dashboard()
@@ -104,10 +107,10 @@ def student_screen():
         if st.button("Go back to Home", type='secondary', key='loginbackbtn', shortcut="control+backspace"):
             st.session_state['login_type'] = None
             st.rerun()
-
-    st.header('Login using FaceID', text_alignment='center')
     st.space()
-    st.space() 
+    
+    st.header('Login using FaceID', text_alignment='center')
+    st.space
     
     show_registration = False
     photo_source = st.camera_input("Position your face in the center")
