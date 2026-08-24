@@ -18,7 +18,7 @@ def footer_dashboard():
     
     st.markdown(f"""
         <div style="margin-top:2rem; display:flex; gap:6px; justify-content:center; items-align:center">
-        <p style="font-weight:bold; color:black;">  Made with 🤍 by sahil</p>  
+        <p style="font-weight:bold; color:black;">  Build with 🤍 by sahil</p>  
         
         </div>
                 

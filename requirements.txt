@@ -1,3 +1,5 @@
+streamlit
+
 #Basic
 numpy
 pandas
@@ -22,9 +24,10 @@ segno
 # Image Preprocessing
 pillow
 
-#Basic FrontEnd Lib
-streamlit
+
 
 librosa
-resemble
+
 resemblyzer
+
+resemble

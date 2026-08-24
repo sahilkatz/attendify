@@ -38,7 +38,7 @@ def logo_home(image_path,x=""):
     
     st.markdown(f"""
         <div style="display:flex; flex-direction:column; align-items:center; justify-content:center; margin-bottom:0px; margin-top:0px; ">
-            <h2 style='text-align:center; font-size:4rem ;color:#14447B'>{x}</h2>
+            <h2 style='text-align:center; font-size:4rem; font-weight:700 ;color:#14447B'>{x}</h2>
             <img src="data:image/png;base64,{logo}" style='height:250px; border-radius:60px; margin-bottom :20px; ' />
             
         </div>   
@@ -85,7 +85,7 @@ def style_background_home():
                     flex-direction:column !important; 
                     align-items:center !important; 
                     justify-content:center !important;
-                    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1) !important;
+                    box-shadow: 0 0 15px rgba(0, 255, 255, 0.7) !important;
                     
                     
                    
@@ -124,13 +124,13 @@ def style_base_layout():
 # asdasd
     st.markdown("""
         <style>
-        @import url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');
+        
         @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
-
+        @import url('https://fonts.googleapis.com/css2?family=Fugaz+One&family=Stack+Sans+Notch:wght@200..700&display=swap');
                 
          /* Hide Top Bar of streamlit */
                 
-            #MainMenu, footer, header {
+            MainMenu, footer, header {
                 visibility: hidden;
             }
                 
@@ -139,7 +139,7 @@ def style_base_layout():
             }
 
             h1 {
-                font-family: "Fugaz One", sans-serif !important;
+                font-family: "Stack Sans Notch", sans-serif !important;
                 font-size: 4rem !important;
                 line-height:1.1 !important;
                 margin-bottom:0rem !important;
@@ -149,7 +149,7 @@ def style_base_layout():
                 
 
             h2 {
-                font-family: "Fugaz One", sans-serif !important;
+                font-family: "Stack Sans Notch", sans-serif !important;
                 font-size: 2rem !important;
                 line-height:0.9 !important;
                 margin-bottom:0rem !important;

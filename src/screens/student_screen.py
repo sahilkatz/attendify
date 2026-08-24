@@ -22,7 +22,7 @@ def student_dashboard():
         header_dashboard()
     with c2:
         st.subheader(f"""Welcome, {student_data['name']} """)
-        if st.button("Logout", type='secondary', key='loginbackbtn', shortcut="control+backspace"):
+        if st.button("Logout", type='primary', key='loginbackbtn', shortcut="control+backspace"):
             st.session_state['is_logged_in'] = False
             del st.session_state.student_data 
             st.rerun()
@@ -34,7 +34,7 @@ def student_dashboard():
     with c1:
         st.header('Your Enrolled Subjects')
     with c2:
-        if st.button('Enroll in Subject', type='primary', width='stretch'):
+        if st.button('Enroll in Subject', type='secondary', width='stretch'):
             enroll_dialog()
 
 
@@ -84,6 +84,14 @@ def student_dashboard():
                 ],
                 footer_callback=unenroll_button
             )
+    st.space()  
+    st.space()
+    st.space()
+    st.space()
+    st.space()
+    st.space()
+    st.space()
+    st.space()      
     footer_dashboard()
 
 
@@ -104,7 +112,7 @@ def student_screen():
     with c1:
         header_dashboard()
     with c2:
-        if st.button("Go back to Home", type='secondary', key='loginbackbtn', shortcut="control+backspace"):
+        if st.button("Go back to Home", type='primary', key='loginbackbtn', shortcut="control+backspace"):
             st.session_state['login_type'] = None
             st.rerun()
     st.space()
@@ -186,5 +194,12 @@ def student_screen():
                     st.warning('Please enter your name!')
 
 
-        
+    st.space()  
+    st.space()
+    st.space()
+    st.space()
+    st.space()
+    st.space()
+    st.space()
+    st.space()     
     footer_dashboard()

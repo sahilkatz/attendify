@@ -38,7 +38,7 @@ def teacher_dashboard():
         header_dashboard()
     with c2:
         st.subheader(f"""Welcome, {teacher_data['name']} """)
-        if st.button("Logout", type='secondary', key='loginbackbtn', shortcut="control+backspace"):
+        if st.button("Logout", type='primary', key='loginbackbtn', shortcut="control+backspace"):
             st.session_state['is_logged_in'] = False
             del st.session_state.teacher_data 
             st.rerun()
@@ -81,7 +81,14 @@ def teacher_dashboard():
 
     
 
-
+    st.space()  
+    st.space()
+    st.space()
+    st.space()
+    st.space()
+    st.space()
+    st.space()
+    st.space() 
     footer_dashboard()
 
 
@@ -333,6 +340,15 @@ def teacher_screen_login():
         if st.button('Register Instead', type="secondary", icon=':material/passkey:', width='stretch'):
             st.session_state.teacher_login_type = 'register'
 
+
+    st.space()  
+    st.space()
+    st.space()
+    st.space()
+    st.space()
+    st.space()
+    st.space()
+    st.space() 
     footer_dashboard()
    
 
@@ -404,6 +420,13 @@ def teacher_screen_register():
     with btnc2:
         if st.button('Login Instead', type="secondary", icon=':material/passkey:', width='stretch'):
             st.session_state.teacher_login_type = 'login'
-
+    st.space()  
+    st.space()
+    st.space()
+    st.space()
+    st.space()
+    st.space()
+    st.space()
+    st.space() 
     footer_dashboard()
     
