@@ -14,7 +14,7 @@ def header_home():
     
     st.markdown(f"""
         <div style="display:flex; flex-direction:column; align-items:center; justify-content:center; margin-bottom:30px; margin-top:30px; ">
-            <img src="data:image/png;base64,{logo}" style='height:200px;box-shadow: 0 0 15px rgba(0, 255, 255, 0.4); border-radius:70px;border: 3px solid white; ' />
+            <img src="data:image/png;base64,{logo}" style='height:200px;box-shadow: 0 0 15px rgba(179, 225, 240, 0.5); border-radius:70px;border: 3px solid white; ' />
             <h1 style='text-align:center; font-size:4rem; font-weight:700 ;color:white'>Attendify</h1>
         </div>   
                 

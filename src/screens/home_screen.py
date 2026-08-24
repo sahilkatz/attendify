@@ -24,13 +24,13 @@ def home_screen():
     col1, col2 = st.columns(2, gap="large", vertical_alignment='center')
 
     with col1:  
-            logo_home("images/st_logo.jpg", " I'm STUDENT")
-            if st.button('Student Portal', type='primary', icon=':material/arrow_outward:', icon_position='right',):
+            logo_home("images/st_logo.jpg", " I'm Student")
+            if st.button('Student Portal', type='primary', icon=':material/arrow_outward:', icon_position='right'):
                 st.session_state['login_type']='student'
                 st.rerun()
 
     with col2:  
-            logo_home("images/tr_logo.jpg", " I'm TEACHER")
+            logo_home("images/tr_logo.jpg", " I'm Teacher")
             if st.button('Teacher Portal', type='primary', icon=':material/arrow_outward:', icon_position='right'):
                 st.session_state['login_type']='teacher'
                 st.rerun()

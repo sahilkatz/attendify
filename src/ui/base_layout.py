@@ -38,7 +38,7 @@ def logo_home(image_path,x=""):
     
     st.markdown(f"""
         <div style="display:flex; flex-direction:column; align-items:center; justify-content:center; margin-bottom:0px; margin-top:0px; ">
-            <h2 style='text-align:center; font-size:4rem; font-weight:700 ;color:#14447B'>{x}</h2>
+            <h2 style='text-align:center ;color:#14447B'><b>{x}</b></h2>
             <img src="data:image/png;base64,{logo}" style='height:250px; border-radius:60px; margin-bottom :20px; ' />
             
         </div>   
@@ -79,13 +79,13 @@ def style_background_home():
 
                 .stApp div[data-testid="stColumn"]{
                     background-color:white !important;
-                    padding:2.5rem !important;
-                    border-radius: 6rem !important;
+                    padding:2rem !important;
+                    border-radius: 5rem !important;
                     display:flex !important;
                     flex-direction:column !important; 
                     align-items:center !important; 
                     justify-content:center !important;
-                    box-shadow: 0 0 15px rgba(0, 255, 255, 0.7) !important;
+                    box-shadow: 0 0 15px rgba(179, 225, 240, 0.7) !important;
                     
                     
                    
