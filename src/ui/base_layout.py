@@ -47,24 +47,7 @@ def logo_home(image_path,x=""):
 
 
 
-def note_Student_joined():
-    st.markdown("""
-            <style>
-            #root > div > div > div > div > section > div.stMainBlockContainer.block-container.st-emotion-cache-1w723zb.e15ve43o4 > div > div:nth-child(9) > div > div > div > div{
-                background-color:#14447B !important;
-            }
-            </style>
-            """, unsafe_allow_html=True)
 
-
-def note2_Student_joined():
-    st.markdown("""
-            <style>
-            #root > div > div > div > div > section > div.stMainBlockContainer.block-container.st-emotion-cache-1w723zb.e15ve43o4 > div > div:nth-child(9) > div > div:nth-child(1) > div > div.stElementContainer.element-container.st-emotion-cache-3pwa5w.e4tidtd1 > div > div > div > div{
-                background-color:#14447B !important
-            }
-            </style>
-            """, unsafe_allow_html=True)
 
 
 

@@ -1,5 +1,5 @@
 import streamlit as st
-from src.ui.base_layout import style_background_dashboard, style_base_layout, set_background,note2_Student_joined
+from src.ui.base_layout import style_background_dashboard, style_base_layout, set_background
 from src.components.header import header_dashboard
 from src.components.footer import footer_dashboard
 from PIL import Image
@@ -13,7 +13,7 @@ from src.components.subject_card import subject_card
 
 
 def student_dashboard():
-    note2_Student_joined()
+    
     
     student_data = st.session_state.student_data
     student_id = student_data['student_id']

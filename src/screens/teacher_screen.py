@@ -1,5 +1,5 @@
 import streamlit as st
-from src.ui.base_layout import style_background_dashboard, style_base_layout, set_background, note_Student_joined
+from src.ui.base_layout import style_background_dashboard, style_base_layout, set_background
 from src.components.header import header_dashboard
 from src.components.footer import footer_dashboard
 from src.components.subject_card import subject_card
@@ -198,7 +198,7 @@ def teacher_tab_take_attendance():
 
 
 def teacher_tab_manage_subjects():
-    note_Student_joined()
+    
     teacher_id = st.session_state.teacher_data['teacher_id']
     col1, col2 = st.columns(2)
     with col1:
